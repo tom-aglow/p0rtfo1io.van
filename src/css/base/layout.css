@@ -1,0 +1,12 @@
+.App {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-image: url("../img/name_tag_bottom.svg");
+  background-repeat: no-repeat;
+  background-size: 105%;
+  background-position: center calc(100% + 100vw / 1500 * 210 / 3); }

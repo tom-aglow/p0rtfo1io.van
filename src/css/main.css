@@ -1,0 +1,80 @@
+body, ul, h1, h2, h3, h4, h5, p, figure {
+  padding: 0;
+  margin: 0; }
+
+/***    COLORS    ***/
+/***    BREAKPOINTS    ***/
+/*******************************/
+/***       TYPOGRAPHY        ***/
+/*******************************/
+/***    EXTERNAL FONTS    ***/
+@font-face {
+  font-family: 'Gill Sans';
+  src: url("../fonts/GillSans.ttc"); }
+
+/***    ELEMENTS STYLES    ***/
+html {
+  font-size: 100%; }
+
+body {
+  font-family: "Gill Sans", sans-serif;
+  color: #242424; }
+
+a:link, a:visited {
+  color: #242424;
+  text-decoration: none; }
+
+*::selection {
+  background-color: #EBEBEB;
+  color: #242424; }
+
+.App {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-image: url("../img/name_tag_bottom.svg");
+  background-repeat: no-repeat;
+  background-size: 105%;
+  background-position: center calc(100% + 100vw / 1500 * 210 / 3); }
+
+.intro {
+  text-align: center; }
+
+.motto {
+  font-size: 1.5rem;
+  margin-bottom: 120px; }
+
+.email {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 100; }
+
+.email:link, .email:visited,
+.social a:link,
+.social a:visited {
+  color: #b8b8b8; }
+
+.social {
+  display: flex;
+  justify-content: center; }
+  .social a {
+    margin: 0 10px; }
+
+.thumbs {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 35px; }
+
+.thumb {
+  width: 50px;
+  height: 50px;
+  background-color: #242424; }
+  .thumb:hover {
+    background-size: cover; }
+  .thumb:hover {
+    background-image: url("../img/thumbnails/glitch.jpg"); }
