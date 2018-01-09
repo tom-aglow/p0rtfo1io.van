@@ -1,0 +1,14 @@
+/***    COLORS    ***/
+/***    BREAKPOINTS    ***/
+.thumbs {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 35px; }
+
+.thumb {
+  width: 50px;
+  height: 50px;
+  background-color: #242424; }
+  .thumb:hover {
+    background-size: cover; }

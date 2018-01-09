@@ -7,6 +7,8 @@ body, ul, h1, h2, h3, h4, h5, p, figure {
 /*******************************/
 /***       TYPOGRAPHY        ***/
 /*******************************/
+/***    COLORS    ***/
+/***    BREAKPOINTS    ***/
 /***    EXTERNAL FONTS    ***/
 @font-face {
   font-family: 'Gill Sans';
@@ -41,6 +43,8 @@ a:link, a:visited {
   background-size: 105%;
   background-position: center calc(100% + 100vw / 1500 * 210 / 3); }
 
+/***    COLORS    ***/
+/***    BREAKPOINTS    ***/
 .intro {
   text-align: center; }
 
@@ -64,6 +68,8 @@ a:link, a:visited {
   .social a {
     margin: 0 10px; }
 
+/***    COLORS    ***/
+/***    BREAKPOINTS    ***/
 .thumbs {
   display: flex;
   flex-direction: column;
@@ -76,5 +82,3 @@ a:link, a:visited {
   background-color: #242424; }
   .thumb:hover {
     background-size: cover; }
-  .thumb:hover {
-    background-image: url("../img/thumbnails/glitch.jpg"); }
