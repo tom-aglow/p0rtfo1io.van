@@ -3,11 +3,23 @@ body, ul, h1, h2, h3, h4, h5, p, figure {
   margin: 0; }
 
 /***    COLORS    ***/
+/***    EXTENDS    ***/
+.App, .Work {
+  background-repeat: no-repeat;
+  background-size: 105%;
+  background-position: center calc(100% + 100vw / 1500 * 210 / 3); }
+
 /***    BREAKPOINTS    ***/
 /*******************************/
 /***       TYPOGRAPHY        ***/
 /*******************************/
 /***    COLORS    ***/
+/***    EXTENDS    ***/
+.App, .Work {
+  background-repeat: no-repeat;
+  background-size: 105%;
+  background-position: center calc(100% + 100vw / 1500 * 210 / 3); }
+
 /***    BREAKPOINTS    ***/
 /***    EXTERNAL FONTS    ***/
 @font-face {
@@ -38,12 +50,15 @@ a:link, a:visited {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background-image: url("../img/name_tag_bottom.svg");
+  background-image: url("../img/name_tag_bottom.svg"); }
+
+/***    COLORS    ***/
+/***    EXTENDS    ***/
+.App, .Work {
   background-repeat: no-repeat;
   background-size: 105%;
   background-position: center calc(100% + 100vw / 1500 * 210 / 3); }
 
-/***    COLORS    ***/
 /***    BREAKPOINTS    ***/
 .intro {
   text-align: center; }
@@ -69,12 +84,19 @@ a:link, a:visited {
     margin: 0 10px; }
 
 /***    COLORS    ***/
+/***    EXTENDS    ***/
+.App, .Work {
+  background-repeat: no-repeat;
+  background-size: 105%;
+  background-position: center calc(100% + 100vw / 1500 * 210 / 3); }
+
 /***    BREAKPOINTS    ***/
 .thumbs {
   display: flex;
   flex-direction: column;
   position: absolute;
-  right: 35px; }
+  right: 35px;
+  z-index: 10; }
 
 .thumb {
   width: 50px;
@@ -82,3 +104,37 @@ a:link, a:visited {
   background-color: #242424; }
   .thumb:hover {
     background-size: cover; }
+
+/***    COLORS    ***/
+/***    EXTENDS    ***/
+.App, .Work {
+  background-repeat: no-repeat;
+  background-size: 105%;
+  background-position: center calc(100% + 100vw / 1500 * 210 / 3); }
+
+/***    BREAKPOINTS    ***/
+.Work {
+  background-color: black;
+  background-image: url("../img/name_tag_bottom_inverse.svg");
+  color: #EBEBEB;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  padding-top: 80px; }
+  .Work .col-left {
+    width: calc(40% - 70px);
+    text-align: right;
+    margin-right: 70px; }
+    .Work .col-left .links {
+      margin-top: 25px;
+      font-size: 1rem; }
+      .Work .col-left .links a {
+        margin-left: 15px; }
+      .Work .col-left .links a:link, .Work .col-left .links a:visited {
+        color: #EBEBEB; }
+  .Work .col-right {
+    width: 40%; }
+    .Work .col-right .description, .Work .col-right .tags {
+      margin-bottom: 50px; }
+    .Work .col-right .preview {
+      max-width: 100%; }

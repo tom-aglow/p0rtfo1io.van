@@ -1,20 +1,21 @@
 [
   {
-    "name": "Glitch",
-    "link": "/glitch",
+    "name": "glitch",
+    "link": "glitch",
     "thumb": "glitch.jpg",
     "images": ["glitch_1.jpg", "glitch_2.jpg"],
-    "description": "This micro web application is designed for making genuine glitch effect with user's images. It has a simple user interface and minimal design. Images are corrupted by PHP script.",
+    "description": "this micro web application is designed for making genuine glitch effect with user's images. it has a simple user interface and minimal design. images are corrupted by php script.",
     "url": "http://glitch.ohhhh.me",
     "tags": []
   },
   {
-    "name": "Core Music Agency",
-    "link": "/core-music-agency",
+    "name": "core music agency",
+    "link": "core-music-agency",
     "thumb": "core-music.jpg",
     "images": ["core-music_1.jpg", "core-music_2.jpg"],
     "description": "Core Music is the one of the largest local music agencies in Canada that represents composers, music editors and producers who creates music for films, television and games. Core Music is seeking for its site renovation, they want to make it modern and clean and keep it friendly for users. The site has slick and simple look and not overwhelmed with graphic elements. The news page has infinite scrolling functionality. On the back-end side a custom CMS was created using Laravel framework for server side, Vue.js for client side and Vuex for state management of the application.",
     "url": "http://core-music.deeppink.me",
+    "github": "https://github.com/tom-aglow/core_music",
     "tags": ["Laravel", "Vue.js", "Vuex", "jQuery", "AJAX", "SASS", "Bootstrap"]
   }
 ]

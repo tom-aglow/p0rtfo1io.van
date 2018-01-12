@@ -1,0 +1,38 @@
+@import "../base/vars.sass"
+
+.Work
+  @extend %bottom-name-tag
+
+  background:
+    color: black
+    image: url("../img/name_tag_bottom_inverse.svg")
+  color: $color-light-grey
+  height: 100%
+  width: 100%
+
+  display: flex
+  padding-top: 80px
+
+  .col-left
+    width: calc(40% - 70px)
+    text-align: right
+    margin-right: 70px
+
+    .links
+      margin-top: 25px
+      font-size: 1rem
+      a
+        margin-left: 15px
+
+      a:link, a:visited
+        color: $color-light-grey
+
+
+  .col-right
+    width: 40%
+
+    .description, .tags
+      margin-bottom: 50px
+
+    .preview
+      max-width: 100%

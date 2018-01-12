@@ -1,4 +1,5 @@
 .App
+  @extend %bottom-name-tag
   height: 100vh
   position: relative
   display: flex
@@ -7,8 +8,4 @@
   justify-content: center
   overflow: hidden
 
-  background:
-    image: url("../img/name_tag_bottom.svg")
-    repeat: no-repeat
-    size: 105%
-    position: center calc(100% + 100vw / 1500 * 210 / 3)
+  background-image: url("../img/name_tag_bottom.svg")

@@ -18,7 +18,7 @@ class NavigationLink extends Component {
   render() {
     return (
       <Link
-        to={this.props.link}
+        to={`/works/${this.props.link}`}
         className="thumb"
         style={this.state.style}
         onMouseEnter={this.addThumbBackground}

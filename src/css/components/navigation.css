@@ -1,10 +1,12 @@
 /***    COLORS    ***/
+/***    EXTENDS    ***/
 /***    BREAKPOINTS    ***/
 .thumbs {
   display: flex;
   flex-direction: column;
   position: absolute;
-  right: 35px; }
+  right: 35px;
+  z-index: 10; }
 
 .thumb {
   width: 50px;
