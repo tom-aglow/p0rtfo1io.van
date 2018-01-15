@@ -6,16 +6,57 @@
     "images": ["glitch_1.jpg", "glitch_2.jpg"],
     "description": "this micro web application is designed for making genuine glitch effect with user's images. it has a simple user interface and minimal design. images are corrupted by php script.",
     "url": "http://glitch.ohhhh.me",
+    "github": "",
     "tags": []
+  },
+  {
+    "name": "ediphotos",
+    "link": "ediphotos",
+    "thumb": "ediphotos.jpg",
+    "images": ["ediphotos_1.jpg", "ediphotos_2.jpg"],
+    "description": "ediphotos is a toronto based photo studio specializing in high quality photos for use in travel magazines and blogs. ediphotos has a few photographers based in asia and a few in south america that can go out and do photo shoots based on the client's location and request. ediphotos specializes in photos of natural locations, people, cities and culture.",
+    "url": "http://ediphotos.ohhhh.me",
+    "github": "",
+    "tags": []
+  },
+  {
+    "name": "francesco",
+    "link": "francesco",
+    "thumb": "francesco.jpg",
+    "images": ["francesco_1.jpg", "francesco_2.jpg"],
+    "description": "francesco is well-known high-end italian restaurant in montreal. it has more than a half century history which was started as a small family restaurant with homemade food. today francesco is a brand that represents fidelity to traditions, ultimate quality, exclusivity and highest privacy.",
+    "url": "http://francesco.ohhhh.me",
+    "github": "https://github.com/tom-aglow/vanarts_francesco",
+    "tags": ["jquery", "sass"]
+  },
+  {
+    "name": "mikem",
+    "link": "mikem",
+    "thumb": "mikem.jpg",
+    "images": ["mikem_1.jpg", "mikem_2.jpg"],
+    "description": "dj mike m is a house music dj and producer based in london, uk. he specializes in soulful house music and plays at clubs, events, private parties, art releases, etc. he wants to create a personal logo and a website to promote his north america tour and get some sponsorship from a dj equipment manufacturer. <br><br> mike is young professional dj who gained his fame very quickly mostly due to his prodigious shows and performances. he cultivates atypical approach in his concerts a lot and pushes the boundaries of music and art as far as he can. His feeling words are artsy, fun, unusual, high-energy and edgy. <br><br> the site was designed in fun and playful way with a lot of colours and unusual ui elements. client's logo was created as a composition of simple geometrical shapes and it could be used as a backdrop behind dj on the stage. the music page has custom audio player which closely incorporated to page layout and chosen design direction.",
+    "url": "http://mikem.ohhhh.me",
+    "github": "https://github.com/tom-aglow/vanarts_mikem",
+    "tags": ["jquery", "sass"]
+  },
+  {
+    "name": "uptown",
+    "link": "uptown",
+    "thumb": "uptown.jpg",
+    "images": ["uptown_1.jpg", "uptown_2.jpg"],
+    "description": "uptown barbers is vancouver's barbershop located at mount pleasant district. the owner wanted to create a simple yet professional website where users can get to know barbershop's mission and services. moreover, the site must help user to make an appointment at preferable date and time. <br><br> the site consists of just landing page and booking page. it has rustic look. landing page contains information about barbershop, its services, contacts, recent testimonials from visitors, active barbers and their ratings. in the back end of the site a reservation system was created which can track user bookings, send them confirmation and reminding emails. the custom admin panel where owner can manage shifts and bookings was developed using vue.js framework.",
+    "url": "https://uptown-barbers.herokuapp.com/",
+    "github": "https://github.com/tom-aglow/vanarts_mikem",
+    "tags": ["jquery", "sass", "ajax", "ruby on rails", "bootstrap", "vue.js", "chart.js"]
   },
   {
     "name": "core music agency",
     "link": "core-music-agency",
     "thumb": "core-music.jpg",
     "images": ["core-music_1.jpg", "core-music_2.jpg"],
-    "description": "Core Music is the one of the largest local music agencies in Canada that represents composers, music editors and producers who creates music for films, television and games. Core Music is seeking for its site renovation, they want to make it modern and clean and keep it friendly for users. The site has slick and simple look and not overwhelmed with graphic elements. The news page has infinite scrolling functionality. On the back-end side a custom CMS was created using Laravel framework for server side, Vue.js for client side and Vuex for state management of the application.",
+    "description": "core music is the one of the largest local music agencies in canada that represents composers, music editors and producers who creates music for films, television and games. core music is seeking for its site renovation, they want to make it modern and clean and keep it friendly for users. the site has slick and simple look and not overwhelmed with graphic elements. the news page has infinite scrolling functionality. on the back-end side a custom cms was created using laravel framework for server side, vue.js for client side and vuex for state management of the application.",
     "url": "http://core-music.deeppink.me",
     "github": "https://github.com/tom-aglow/core_music",
-    "tags": ["Laravel", "Vue.js", "Vuex", "jQuery", "AJAX", "SASS", "Bootstrap"]
+    "tags": ["laravel", "vue.js", "vuex", "jquery", "ajax", "sass", "bootstrap", "tdd"]
   }
 ]

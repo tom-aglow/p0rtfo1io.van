@@ -6,7 +6,7 @@ import NavigationLink from './NavigationLink';
 class Navigation extends Component {
   render() {
     const links = works.map((work, index) => (
-      <NavigationLink key={index} {...work} />
+      <NavigationLink key={index} {...work} id={index}/>
     ));
     return <nav className="thumbs">{links}</nav>;
   }

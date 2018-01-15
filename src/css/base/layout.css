@@ -1,3 +1,11 @@
+/***    COLORS    ***/
+/***    EXTENDS    ***/
+.App {
+  background-repeat: no-repeat;
+  background-size: 105%;
+  background-position: center calc(100% + 100vw / 1500 * 210 / 3); }
+
+/***    BREAKPOINTS    ***/
 .App {
   height: 100vh;
   position: relative;
@@ -6,7 +14,4 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background-image: url("../img/name_tag_bottom.svg");
-  background-repeat: no-repeat;
-  background-size: 105%;
-  background-position: center calc(100% + 100vw / 1500 * 210 / 3); }
+  background-image: url("../img/name_tag_bottom.svg"); }

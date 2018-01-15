@@ -27,7 +27,7 @@ class Works extends Component {
           </div>
         </div>
         <div className="col-right">
-          <p className="description">{description}</p>
+          <p className="description" dangerouslySetInnerHTML={{__html: description}} />
           <p className="tags">{tags.map(tag => `#${tag}`).join(' ')}</p>
           <img className="preview" src={preview} alt=""/>
         </div>
