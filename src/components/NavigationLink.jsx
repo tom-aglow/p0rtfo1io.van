@@ -40,7 +40,7 @@ class NavigationLink extends Component {
         style={Object.assign({}, {backgroundImage}, {backgroundColor})}
         onMouseEnter={this.addThumbBackground}
         onMouseLeave={this.removeThumbBackground}
-      />
+      ><span className="tag">{this.props.name}</span></Link>
     )
   }
 }
