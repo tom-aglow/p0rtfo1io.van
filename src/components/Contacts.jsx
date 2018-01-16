@@ -1,12 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const Intro = () => {
+const Contacts = () => {
   return (
-    <section className="intro">
-      <p className="motto">i code therefore i am</p>
-      <a href="mailto: tom@ohhhh.me" className="email">
-        tom@ohhhh.me
-      </a>
+    <div className="Contacts">
+      <a href="mailto: tom@ohhhh.me" className="email">tom@ohhhh.me</a>
       <div className="social">
         <a href="https://github.com/tom-aglow">
           <span className="fa fa-github fa-lg" />
@@ -15,8 +13,9 @@ const Intro = () => {
           <span className="fa fa-linkedin fa-lg" />
         </a>
       </div>
-    </section>
+      <Link to="/about" className="about">about.me</Link>
+    </div>
   );
 };
 
-export default Intro;
+export default Contacts;

@@ -53,12 +53,8 @@ a:link, a:visited {
 .App {
   height: 100vh;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   overflow: hidden;
-  background-image: url("../img/name_tag_bottom.svg"); }
+  background-image: url("../img/name_tag_bottom_intro.svg"); }
 
 /***    COLORS    ***/
 /***    EXTENDS    ***/
@@ -68,22 +64,27 @@ a:link, a:visited {
   background-position: center calc(100% + 100vw / 1500 * 210 / 3); }
 
 /***    BREAKPOINTS    ***/
-.intro {
-  text-align: center; }
+.Contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; }
 
-.motto {
-  font-size: 1.5rem;
-  margin-bottom: 120px; }
-
-.email {
-  display: block;
-  margin-bottom: 20px;
-  font-weight: 100; }
+.email,
+.social {
+  margin-right: 50px; }
 
 .email:link, .email:visited,
 .social a:link,
-.social a:visited {
-  color: #b8b8b8; }
+.social a:visited,
+.about:link,
+.about:visited {
+  color: #BFBFBF; }
+
+.email:hover,
+.social a:hover,
+.about:hover {
+  color: #242424; }
 
 .social {
   display: flex;

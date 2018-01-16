@@ -1,0 +1,25 @@
+@import "../base/vars.sass"
+
+.Contacts
+  display: flex
+  justify-content: center
+  align-items: center
+  margin-top: 20px
+
+.email,
+.social
+  margin-right: 50px
+
+.email,
+.social a,
+.about
+  &:link, &:visited
+    color: $color-medium-grey
+  &:hover
+    color: $color-dark-grey
+
+.social
+  display: flex
+  justify-content: center
+  a
+    margin: 0 10px

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import Intro from './components/Intro';
+import Intro from './components/Contacts';
 import Navigation from './components/Navigation';
 import Work from './components/Work';
 

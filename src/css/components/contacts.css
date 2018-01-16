@@ -1,0 +1,30 @@
+/***    COLORS    ***/
+/***    EXTENDS    ***/
+/***    BREAKPOINTS    ***/
+.Contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; }
+
+.email,
+.social {
+  margin-right: 50px; }
+
+.email:link, .email:visited,
+.social a:link,
+.social a:visited,
+.about:link,
+.about:visited {
+  color: #BFBFBF; }
+
+.email:hover,
+.social a:hover,
+.about:hover {
+  color: #242424; }
+
+.social {
+  display: flex;
+  justify-content: center; }
+  .social a {
+    margin: 0 10px; }
