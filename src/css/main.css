@@ -104,14 +104,37 @@ a:link, a:visited {
   flex-direction: column;
   position: absolute;
   right: 35px;
+  top: calc(50% - 150px);
   z-index: 10; }
 
 .thumb {
   width: 50px;
   height: 50px;
-  background-color: #242424; }
-  .thumb:hover {
-    background-size: cover; }
+  position: relative;
+  background-color: #242424;
+  background-size: cover; }
+  .thumb .tag {
+    position: absolute;
+    right: calc(100% + 100px);
+    top: 0;
+    height: 50px;
+    width: 200px;
+    line-height: 50px;
+    text-align: right;
+    color: #BFBFBF;
+    opacity: 0;
+    transition: opacity 0.3s, right 0.3s; }
+  .thumb:hover .tag {
+    opacity: 1;
+    right: calc(100% + 10px); }
+
+.back-to-home {
+  position: absolute;
+  top: 30px;
+  right: calc(35px + 25px - 6px);
+  color: #EBEBEB; }
+  .back-to-home.black {
+    color: #242424; }
 
 /***    COLORS    ***/
 /***    EXTENDS    ***/

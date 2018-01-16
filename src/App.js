@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Switch, Route} from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 
 import Intro from './components/Intro';
 import Navigation from './components/Navigation';
@@ -12,7 +12,7 @@ class App extends Component {
         <Navigation />
         <Switch>
           <Route exact path="/" component={Intro} />
-          <Route path="/works/:slug" component={Work}/>
+          <Route path="/works/:slug" component={Work} />
         </Switch>
       </div>
     );

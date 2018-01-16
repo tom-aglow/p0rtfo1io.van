@@ -30,4 +30,5 @@
     .Work .col-right .description, .Work .col-right .tags {
       margin-bottom: 50px; }
     .Work .col-right .preview {
-      max-width: 100%; }
+      max-width: 100%;
+      max-height: 300px; }
