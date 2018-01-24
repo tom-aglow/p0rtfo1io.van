@@ -40,6 +40,16 @@
     "tags": ["jquery", "sass"]
   },
   {
+    "name": "vote up",
+    "link": "vote-up",
+    "thumb": "vote-up.jpg",
+    "images": ["vote-up_1.jpg"],
+    "description": "vote up.",
+    "url": "http://vote-up.ohhhh.me",
+    "github": "https://github.com/tom-aglow/vanarts_vote_up",
+    "tags": ["jquery", "sass", "css-grid"]
+  },
+  {
     "name": "uptown",
     "link": "uptown",
     "thumb": "uptown.jpg",
