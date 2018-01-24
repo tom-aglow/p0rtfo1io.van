@@ -39,3 +39,8 @@
   z-index: 1
   &.black
     color: $color-dark-grey
+
+@for $i from 1 through 12
+  .thumb-#{$i}
+    $color: 180 - $i * (180 - 35) / (7 - 1)
+    background-color: rgb($color, $color, $color)

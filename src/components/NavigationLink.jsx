@@ -7,10 +7,6 @@ class NavigationLink extends Component {
     image: {},
     backgroundColor: {}
   };
-  
-  componentDidMount() {
-    this.setTileColor();
-  }
 
   addThumbBackground = async () => {
     const thumb = await import(`../img/thumbnails/${this.props.thumb}`);
@@ -21,23 +17,15 @@ class NavigationLink extends Component {
     this.setState({backgroundImage: ''});
   };
 
-  setTileColor = () => {
-    const startColor = 220;
-    const endColor = 35;
-    const num = works.length;
-    const currentColor = startColor - this.props.id * (startColor - endColor) / (num - 1);
-    console.log(this.props.id, currentColor);
-    this.setState({backgroundColor: `rgb(${currentColor}, ${currentColor}, ${currentColor})`});
-  };
-
   render() {
     const {backgroundImage, backgroundColor} = this.state;
 
+    console.log(this.props.link, backgroundColor);
     return (
       <Link
         to={`/works/${this.props.link}`}
-        className="thumb"
-        style={Object.assign({}, {backgroundImage}, {backgroundColor})}
+        className={`thumb thumb-${this.props.id + 1}`}
+        style={Object.assign({}, {backgroundImage})}
         onMouseEnter={this.addThumbBackground}
         onMouseLeave={this.removeThumbBackground}
       ><span className="tag">{this.props.name}</span></Link>
