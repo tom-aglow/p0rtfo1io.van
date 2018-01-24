@@ -29,7 +29,7 @@ class Works extends Component {
         <div className="col-right">
           <p className="description" dangerouslySetInnerHTML={{__html: description}} />
           <p className="tags">{tags.map(tag => `#${tag}`).join(' ')}</p>
-          <img className="preview" src={preview} alt=""/>
+          <a href={url} target="_blank" rel="noopener noreferrer"><img className="preview" src={preview} alt=""/></a>
         </div>
 
       </div>
