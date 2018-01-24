@@ -5,7 +5,7 @@ import works from '../db/works';
 class Works extends Component {
   renderGithubLink(link) {
     if (link) {
-      return <a href={link}><span className="fa fa-git" /></a>
+      return <a href={link} target="_blank" rel="noopener noreferrer"><span className="fa fa-git" /></a>
     }
     return null;
   }
@@ -22,7 +22,7 @@ class Works extends Component {
         <div className="col-left">
           <h1>{name}</h1>
           <div className="links">
-            <a href={url}><span className="fa fa-external-link" /></a>
+            <a href={url} target="_blank" rel="noopener noreferrer"><span className="fa fa-external-link" /></a>
             {this.renderGithubLink(github)}
           </div>
         </div>

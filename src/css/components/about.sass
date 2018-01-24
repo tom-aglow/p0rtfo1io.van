@@ -1,0 +1,24 @@
+@import "../base/vars.sass"
+
+.About
+  @extend %bottom-name-tag
+
+  background:
+    color: $color-light-grey
+    image: url("../img/name_tag_bottom.svg")
+  height: 100%
+  width: 100%
+  position: relative
+
+.about-me
+  position: absolute
+  width: 35%
+  top: 50px
+  left: calc(30%)
+
+  p
+    line-height: 1.4rem
+    margin-bottom: 1rem
+
+  a:visited, a:link
+    text-decoration: underline

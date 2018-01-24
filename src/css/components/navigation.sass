@@ -5,7 +5,7 @@
   flex-direction: column
   position: absolute
   right: 35px
-  top: calc(50% - 150px)
+  top: calc(50% - 7* 50px / 2)
   z-index: 10
 
 .thumb
@@ -25,7 +25,7 @@
     text-align: right
     color: $color-medium-grey
     opacity: 0
-    transition: opacity 0.3s, right 0.3s
+    transition: opacity 0.3s, right 0.3s ease-out
 
   &:hover .tag
     opacity: 1
@@ -36,5 +36,6 @@
   top: 30px
   right: calc(35px + 25px - 6px)
   color: $color-light-grey
+  z-index: 1
   &.black
     color: $color-dark-grey

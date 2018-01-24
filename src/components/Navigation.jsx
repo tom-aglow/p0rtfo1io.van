@@ -5,6 +5,17 @@ import works from '../db/works';
 import NavigationLink from './NavigationLink';
 
 class Navigation extends Component {
+  state = {
+    links: []
+  }
+
+  componentDidMount() {
+    const links = works.reverse().map((work, index) => (
+      <NavigationLink key={index} {...work} id={index}/>
+    ));
+    this.setState({links});
+  }
+
   renderBackToHomeLink() {
     switch (this.props.location.pathname) {
       case '/':
@@ -17,12 +28,9 @@ class Navigation extends Component {
   }
 
   render() {
-    const links = works.map((work, index) => (
-      <NavigationLink key={index} {...work} id={index}/>
-    ));
     return (
       <nav>
-        <ul className="thumbs">{links}</ul>
+        <ul className="thumbs">{this.state.links}</ul>
         {this.renderBackToHomeLink()}
       </nav>
     );

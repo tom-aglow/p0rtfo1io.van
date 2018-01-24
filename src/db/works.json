@@ -58,5 +58,15 @@
     "url": "http://core-music.deeppink.me",
     "github": "https://github.com/tom-aglow/core_music",
     "tags": ["laravel", "vue.js", "vuex", "jquery", "ajax", "sass", "bootstrap", "tdd"]
+  },
+  {
+    "name": "f1 hero",
+    "link": "f1-hero",
+    "thumb": "f1_hero.jpg",
+    "images": ["f1_hero_1.jpg", "f1_hero_2.jpg"],
+    "description": "f1 hero is the formula 1 results prediction app where users can submit their forecast to compete with each other. all predictions are matched against actual race results using public api data in order to calculate user's score.",
+    "url": "http://core-music.deeppink.me",
+    "github": "https://f1-hero.herokuapp.com/",
+    "tags": ["react.js", "redux", "node.js", "express.js", "api", "oauth", "webpack"]
   }
 ]

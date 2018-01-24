@@ -3,12 +3,13 @@
 .Work {
   background-repeat: no-repeat;
   background-size: 105%;
-  background-position: center calc(100% + 100vw / 1500 * 210 / 3); }
+  background-position: center bottom calc(-100vw / 1500 * 210 / 3); }
 
 /***    BREAKPOINTS    ***/
 .Work {
   background-color: black;
   background-image: url("../img/name_tag_bottom_inverse.svg");
+  background-position: center bottom calc(-100vw / 1500 * 210 / 3 + 80px);
   color: #EBEBEB;
   height: 100%;
   width: 100%;

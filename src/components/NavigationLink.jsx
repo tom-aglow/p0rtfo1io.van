@@ -22,11 +22,11 @@ class NavigationLink extends Component {
   };
 
   setTileColor = () => {
-    const startColor = 235;
+    const startColor = 220;
     const endColor = 35;
     const num = works.length;
     const currentColor = startColor - this.props.id * (startColor - endColor) / (num - 1);
-
+    console.log(this.props.id, currentColor);
     this.setState({backgroundColor: `rgb(${currentColor}, ${currentColor}, ${currentColor})`});
   };
 

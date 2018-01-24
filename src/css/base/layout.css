@@ -3,7 +3,7 @@
 .App {
   background-repeat: no-repeat;
   background-size: 105%;
-  background-position: center calc(100% + 100vw / 1500 * 210 / 3); }
+  background-position: center bottom calc(-100vw / 1500 * 210 / 3); }
 
 /***    BREAKPOINTS    ***/
 .App {
