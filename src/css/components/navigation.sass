@@ -5,7 +5,7 @@
   flex-direction: column
   position: absolute
   right: 35px
-  top: calc(50% - 7* 50px / 2)
+  top: calc(50% - 8 * 50px / 2)
   z-index: 10
 
 .thumb
@@ -17,19 +17,17 @@
 
   .tag
     position: absolute
-    right: calc(100% + 100px)
+    right: 100vw
     top: 0
     height: 50px
     width: 200px
     line-height: 50px
     text-align: right
     color: $color-medium-grey
-    opacity: 0
-    transition: opacity 0.3s, right 0.3s ease-out
+    animation: slideMeOut 0.5s forwards
 
   &:hover .tag
-    opacity: 1
-    right: calc(100% + 10px)
+    animation: slideMeIn 0.5s forwards
 
 .back-to-home
   position: absolute
@@ -42,5 +40,27 @@
 
 @for $i from 1 through 12
   .thumb-#{$i}
-    $color: 180 - $i * (180 - 35) / (7 - 1)
+    $color: 220 - $i * (220 - 45) / (8 - 1)
     background-color: rgb($color, $color, $color)
+
+@keyframes slideMeIn
+  0%
+    right: 100vw
+    opacity: 0
+  10%
+    right: calc(100% + 100px)
+    opacity: 0
+  100%
+    right: calc(100% + 10px)
+    opacity: 1
+
+@keyframes slideMeOut
+  0%
+    right: calc(100% + 10px)
+    opacity: 1
+  90%
+    right: calc(100% + 100px)
+    opacity: 0
+  100%
+    right: 100vw
+    opacity: 0
