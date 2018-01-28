@@ -34,7 +34,7 @@
     "link": "mikem",
     "thumb": "mikem.jpg",
     "images": ["mikem_1.jpg", "mikem_2.jpg"],
-    "description": "dj mike m is a house music dj and producer based in london, uk. he specializes in soulful house music and plays at clubs, events, private parties, art releases, etc. he wants to create a personal logo and a website to promote his north america tour and get some sponsorship from a dj equipment manufacturer. <br><br> mike is young professional dj who gained his fame very quickly mostly due to his prodigious shows and performances. he cultivates atypical approach in his concerts a lot and pushes the boundaries of music and art as far as he can. His feeling words are artsy, fun, unusual, high-energy and edgy. <br><br> the site was designed in fun and playful way with a lot of colours and unusual ui elements. client's logo was created as a composition of simple geometrical shapes and it could be used as a backdrop behind dj on the stage. the music page has custom audio player which closely incorporated to page layout and chosen design direction.",
+    "description": "dj mike m is a house music dj and producer based in london, uk. he gained his fame very quickly mostly due to his prodigious shows and performances. he cultivates atypical approach in his concerts a lot and pushes the boundaries of music and art as far as he can. he wants to create a personal logo and a website to promote his north america tour. <br><br> the site was designed in fun and playful way with a lot of colours and unusual ui elements. client's logo was created as a composition of simple geometrical shapes and it could be used as a backdrop behind dj on the stage. the music page has custom audio player which closely incorporated to page layout and chosen design direction.",
     "url": "http://mikem.ohhhh.me",
     "github": "https://github.com/tom-aglow/vanarts_mikem",
     "tags": ["jquery", "sass"]
@@ -44,7 +44,7 @@
     "link": "vote-up",
     "thumb": "vote-up.jpg",
     "images": ["vote-up_1.jpg"],
-    "description": "vote up.",
+    "description": "the goal of the website is to help young canadian citizens to decide who they should vote for in the next general election. this is done by providing information on the relevant parties and by making it easier for the user to compare and contrast. the website is developed as a part of student agile scrum exercise.",
     "url": "http://vote-up.ohhhh.me",
     "github": "https://github.com/tom-aglow/vanarts_vote_up",
     "tags": ["jquery", "sass", "css-grid"]

@@ -4,7 +4,6 @@
   @extend %bottom-name-tag
 
   background:
-    color: black
     image: url("../img/name_tag_bottom_inverse.svg")
     position: center bottom calc(-100vw / 1500 * 210 / 3 + 80px)
   color: $color-light-grey
@@ -13,11 +12,30 @@
 
   display: flex
   padding-top: 80px
+  position: relative
+
+  &::before
+    content: ''
+    position: absolute
+    top: calc(50% - 25px)
+    right: -100px
+    width: 50px
+    height: 50px
+    background-color: black
+    border-radius: 50%
+    transform-origin: center center
+    z-index: -1
+
+    animation: spread 0.6s forwards
+
 
   .col-left
     width: calc(40% - 70px)
     text-align: right
     margin-right: 70px
+    opacity: 0
+    transform: translate3d(0, -30px, 0)
+    animation: slideInDown 0.6s 0.2s forwards
 
     .links
       margin-top: 25px
@@ -31,6 +49,9 @@
 
   .col-right
     width: 40%
+    opacity: 0
+    transform: translate3d(0, -30px, 0)
+    animation: slideInDown 0.6s 0.5s forwards
 
     .description, .tags
       margin-bottom: 50px
@@ -38,3 +59,17 @@
     .preview
       max-width: 100%
       max-height: 300px
+
+
+@keyframes spread
+  0%
+    width: 50px
+    height: 50px
+    top: calc(50% - 25px)
+    opacity: 0.4
+
+  100%
+    width: 3000px
+    height: 3000px
+    top: calc(50% - 1500px)
+    opacity: 1

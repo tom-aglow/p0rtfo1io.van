@@ -42,6 +42,15 @@ a:link, a:visited {
   background-color: #EBEBEB;
   color: #242424; }
 
+@keyframes slideInDown {
+  from {
+    transform: translate3d(0, -30px, 0);
+    visibility: visible;
+    opacity: 0; }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1; } }
+
 /***    COLORS    ***/
 /***    EXTENDS    ***/
 .App, .About, .Work {
@@ -54,6 +63,7 @@ a:link, a:visited {
   height: 100vh;
   position: relative;
   overflow: hidden;
+  z-index: 1;
   background-image: url("../img/name_tag_bottom_intro.svg"); }
 
 /***    COLORS    ***/
@@ -111,7 +121,10 @@ a:link, a:visited {
   position: absolute;
   width: 35%;
   top: 50px;
-  left: calc(30%); }
+  left: calc(30%);
+  opacity: 0;
+  transform: translate3d(0, -30px, 0);
+  animation: slideInDown 0.6s 0.3s forwards; }
   .about-me p {
     line-height: 1.4rem;
     margin-bottom: 1rem; }
@@ -131,7 +144,7 @@ a:link, a:visited {
   flex-direction: column;
   position: absolute;
   right: 35px;
-  top: calc(50% - 7* 50px / 2);
+  top: calc(50% - 8 * 50px / 2);
   z-index: 10; }
 
 .thumb {
@@ -142,18 +155,16 @@ a:link, a:visited {
   background-size: cover; }
   .thumb .tag {
     position: absolute;
-    right: calc(100% + 100px);
+    right: 100vw;
     top: 0;
     height: 50px;
     width: 200px;
     line-height: 50px;
     text-align: right;
     color: #BFBFBF;
-    opacity: 0;
-    transition: opacity 0.3s, right 0.3s ease-out; }
+    animation: slideMeOut 0.5s forwards; }
   .thumb:hover .tag {
-    opacity: 1;
-    right: calc(100% + 10px); }
+    animation: slideMeIn 0.5s forwards; }
 
 .back-to-home {
   position: absolute;
@@ -165,28 +176,28 @@ a:link, a:visited {
     color: #242424; }
 
 .thumb-1 {
-  background-color: #9c9c9c; }
+  background-color: #cccccc; }
 
 .thumb-2 {
-  background-color: #848484; }
+  background-color: #b1b1b1; }
 
 .thumb-3 {
-  background-color: #6c6c6c; }
+  background-color: #979797; }
 
 .thumb-4 {
-  background-color: #535353; }
+  background-color: #7c7c7c; }
 
 .thumb-5 {
-  background-color: #3b3b3b; }
+  background-color: #626262; }
 
 .thumb-6 {
-  background-color: #232323; }
+  background-color: #474747; }
 
 .thumb-7 {
-  background-color: #0b0b0b; }
+  background-color: #2d2d2d; }
 
 .thumb-8 {
-  background-color: black; }
+  background-color: #131313; }
 
 .thumb-9 {
   background-color: black; }
@@ -200,6 +211,28 @@ a:link, a:visited {
 .thumb-12 {
   background-color: black; }
 
+@keyframes slideMeIn {
+  0% {
+    right: 100vw;
+    opacity: 0; }
+  10% {
+    right: calc(100% + 100px);
+    opacity: 0; }
+  100% {
+    right: calc(100% + 10px);
+    opacity: 1; } }
+
+@keyframes slideMeOut {
+  0% {
+    right: calc(100% + 10px);
+    opacity: 1; }
+  90% {
+    right: calc(100% + 100px);
+    opacity: 0; }
+  100% {
+    right: 100vw;
+    opacity: 0; } }
+
 /***    COLORS    ***/
 /***    EXTENDS    ***/
 .App, .About, .Work {
@@ -209,18 +242,33 @@ a:link, a:visited {
 
 /***    BREAKPOINTS    ***/
 .Work {
-  background-color: black;
   background-image: url("../img/name_tag_bottom_inverse.svg");
   background-position: center bottom calc(-100vw / 1500 * 210 / 3 + 80px);
   color: #EBEBEB;
   height: 100%;
   width: 100%;
   display: flex;
-  padding-top: 80px; }
+  padding-top: 80px;
+  position: relative; }
+  .Work::before {
+    content: '';
+    position: absolute;
+    top: calc(50% - 25px);
+    right: -100px;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    transform-origin: center center;
+    z-index: -1;
+    animation: spread 0.6s forwards; }
   .Work .col-left {
     width: calc(40% - 70px);
     text-align: right;
-    margin-right: 70px; }
+    margin-right: 70px;
+    opacity: 0;
+    transform: translate3d(0, -30px, 0);
+    animation: slideInDown 0.6s 0.2s forwards; }
     .Work .col-left .links {
       margin-top: 25px;
       font-size: 1rem; }
@@ -229,9 +277,24 @@ a:link, a:visited {
       .Work .col-left .links a:link, .Work .col-left .links a:visited {
         color: #EBEBEB; }
   .Work .col-right {
-    width: 40%; }
+    width: 40%;
+    opacity: 0;
+    transform: translate3d(0, -30px, 0);
+    animation: slideInDown 0.6s 0.5s forwards; }
     .Work .col-right .description, .Work .col-right .tags {
       margin-bottom: 50px; }
     .Work .col-right .preview {
       max-width: 100%;
       max-height: 300px; }
+
+@keyframes spread {
+  0% {
+    width: 50px;
+    height: 50px;
+    top: calc(50% - 25px);
+    opacity: 0.4; }
+  100% {
+    width: 3000px;
+    height: 3000px;
+    top: calc(50% - 1500px);
+    opacity: 1; } }

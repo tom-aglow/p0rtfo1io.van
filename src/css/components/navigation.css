@@ -6,7 +6,7 @@
   flex-direction: column;
   position: absolute;
   right: 35px;
-  top: calc(50% - 7* 50px / 2);
+  top: calc(50% - 8 * 50px / 2);
   z-index: 10; }
 
 .thumb {
@@ -17,18 +17,16 @@
   background-size: cover; }
   .thumb .tag {
     position: absolute;
-    right: calc(100% + 100px);
+    right: 100vw;
     top: 0;
     height: 50px;
     width: 200px;
     line-height: 50px;
     text-align: right;
     color: #BFBFBF;
-    opacity: 0;
-    transition: opacity 0.3s, right 0.3s ease-out; }
+    animation: slideMeOut 0.5s forwards; }
   .thumb:hover .tag {
-    opacity: 1;
-    right: calc(100% + 10px); }
+    animation: slideMeIn 0.5s forwards; }
 
 .back-to-home {
   position: absolute;
@@ -40,28 +38,28 @@
     color: #242424; }
 
 .thumb-1 {
-  background-color: #9c9c9c; }
+  background-color: #cccccc; }
 
 .thumb-2 {
-  background-color: #848484; }
+  background-color: #b1b1b1; }
 
 .thumb-3 {
-  background-color: #6c6c6c; }
+  background-color: #979797; }
 
 .thumb-4 {
-  background-color: #535353; }
+  background-color: #7c7c7c; }
 
 .thumb-5 {
-  background-color: #3b3b3b; }
+  background-color: #626262; }
 
 .thumb-6 {
-  background-color: #232323; }
+  background-color: #474747; }
 
 .thumb-7 {
-  background-color: #0b0b0b; }
+  background-color: #2d2d2d; }
 
 .thumb-8 {
-  background-color: black; }
+  background-color: #131313; }
 
 .thumb-9 {
   background-color: black; }
@@ -74,3 +72,25 @@
 
 .thumb-12 {
   background-color: black; }
+
+@keyframes slideMeIn {
+  0% {
+    right: 100vw;
+    opacity: 0; }
+  10% {
+    right: calc(100% + 100px);
+    opacity: 0; }
+  100% {
+    right: calc(100% + 10px);
+    opacity: 1; } }
+
+@keyframes slideMeOut {
+  0% {
+    right: calc(100% + 10px);
+    opacity: 1; }
+  90% {
+    right: calc(100% + 100px);
+    opacity: 0; }
+  100% {
+    right: 100vw;
+    opacity: 0; } }
