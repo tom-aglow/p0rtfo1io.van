@@ -5,16 +5,12 @@
 /***    EXTENDS    ***/
 /***    BREAKPOINTS    ***/
 /***    EXTERNAL FONTS    ***/
-@font-face {
-  font-family: 'Gill Sans';
-  src: url("../fonts/GillSans.ttc"); }
-
 /***    ELEMENTS STYLES    ***/
 html {
   font-size: 100%; }
 
 body {
-  font-family: "Gill Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #242424; }
 
 a:link, a:visited {
@@ -24,3 +20,6 @@ a:link, a:visited {
 *::selection {
   background-color: #EBEBEB;
   color: #242424; }
+
+p {
+  line-height: 1.4rem; }

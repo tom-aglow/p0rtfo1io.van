@@ -17,9 +17,11 @@
   position: absolute;
   width: 35%;
   top: 50px;
-  left: calc(30%); }
+  left: calc(30%);
+  opacity: 0;
+  transform: translate3d(0, -30px, 0);
+  animation: slideInDown 0.6s 0.3s forwards; }
   .about-me p {
-    line-height: 1.4rem;
     margin-bottom: 1rem; }
   .about-me a:visited, .about-me a:link {
     text-decoration: underline; }

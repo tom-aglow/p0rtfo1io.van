@@ -10,4 +10,5 @@
   height: 100vh;
   position: relative;
   overflow: hidden;
+  z-index: 1;
   background-image: url("../img/name_tag_bottom_intro.svg"); }
