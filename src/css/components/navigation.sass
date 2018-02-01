@@ -3,10 +3,13 @@
 .thumbs
   display: flex
   flex-direction: column
-  position: absolute
+  position: fixed
   right: 35px
   top: calc(50% - 8 * 50px / 2)
   z-index: 10
+
+  @media screen and (max-width: 600px)
+    right: 20px
 
 .thumb
   width: 50px
@@ -38,13 +41,17 @@
     animation: slideMeIn 0.5s forwards
 
 .back-to-home
-  position: absolute
+  position: fixed
   top: 30px
   right: calc(35px + 25px - 6px)
   color: $color-light-grey
   z-index: 1
   &.black
     color: $color-dark-grey
+
+  @media screen and (max-width: 600px)
+    right: calc(20px + 20px - 6px)
+
 
 @for $i from 1 through 12
   .thumb-#{$i}

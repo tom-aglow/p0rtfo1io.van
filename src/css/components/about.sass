@@ -8,6 +8,13 @@
   width: 100%
   position: relative
 
+  @media screen and (max-width: 800px)
+    background-image: url("../img/name_tag_left.svg")
+  @media screen and (max-width: 600px)
+    height: 200%
+    background-image: none
+
+
 .about-me
   position: absolute
   width: 35%
@@ -16,6 +23,17 @@
   opacity: 0
   transform: translate3d(0, -30px, 0)
   animation: slideInDown 0.6s 0.3s forwards
+
+  @media screen and (max-width: 800px)
+    width: calc(100% - 100vh / 1100 * 140 * 4 / 3 - 150px)
+    left: calc(100vh / 1100 * 140 * 4 / 3)
+    top: calc(100vh / 1100 * 250 + 30px)
+
+  @media screen and (max-width: 600px)
+    width: calc(100% - 120px)
+    left: 30px
+    top: 50px
+
 
   p
     margin-bottom: 1rem
