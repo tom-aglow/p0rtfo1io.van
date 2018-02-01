@@ -1,10 +1,5 @@
 /***    COLORS    ***/
 /***    EXTENDS    ***/
-.About {
-  background-repeat: no-repeat;
-  background-size: 105%;
-  background-position: center bottom calc(-100vw / 1500 * 210 / 3); }
-
 /***    BREAKPOINTS    ***/
 .About {
   background-color: #EBEBEB;

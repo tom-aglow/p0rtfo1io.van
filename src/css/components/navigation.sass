@@ -15,6 +15,11 @@
   background-color: $color-dark-grey
   background-size: cover
 
+  @media screen and (max-width: 600px)
+    width: 40px
+    height: 40px
+
+
   .tag
     position: absolute
     right: 100vw
@@ -25,6 +30,9 @@
     text-align: right
     color: $color-medium-grey
     animation: slideMeOut 0.5s forwards
+
+    @media screen and (max-width: 800px)
+      display: none
 
   &:hover .tag
     animation: slideMeIn 0.5s forwards

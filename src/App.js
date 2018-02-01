@@ -9,7 +9,7 @@ import About from './components/About';
 class App extends Component {
   render() {
     return (
-      <div className="App bg">
+      <div className="App bg" style={{height: window.innerHeight}}>
         <Navigation />
         <Switch>
           <Route exact path="/" component={Intro} />

@@ -1,10 +1,5 @@
 /***    COLORS    ***/
 /***    EXTENDS    ***/
-.Work {
-  background-repeat: no-repeat;
-  background-size: 105%;
-  background-position: center bottom calc(-100vw / 1500 * 210 / 3); }
-
 /***    BREAKPOINTS    ***/
 .Work {
   background-image: url("../img/name_tag_bottom_inverse.svg");
