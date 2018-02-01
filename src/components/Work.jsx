@@ -18,7 +18,7 @@ class Works extends Component {
     const preview = require(`../img/works/${images[0]}`);
 
     return (
-      <div className="Work">
+      <div className="Work bg">
         <div className="col-left">
           <h1>{name}</h1>
           <div className="links">

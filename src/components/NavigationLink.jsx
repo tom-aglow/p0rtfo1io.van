@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import works from '../db/works';
 
 class NavigationLink extends Component {
   state = {
@@ -18,9 +17,8 @@ class NavigationLink extends Component {
   };
 
   render() {
-    const {backgroundImage, backgroundColor} = this.state;
+    const {backgroundImage} = this.state;
 
-    console.log(this.props.link, backgroundColor);
     return (
       <Link
         to={`/works/${this.props.link}`}

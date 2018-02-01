@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
   return (
-    <div className="About">
+    <div className="About bg">
       <div className="about-me">
         <p>hi! i’m tom.</p>
         <p>yes, you’ve read right. i have the engineering degree with honours in the space industry. and i was supposed to build rockets and launch them into space, but instead i’m building websites and launch them to the world wide web.</p>
