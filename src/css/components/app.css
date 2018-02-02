@@ -4,9 +4,13 @@
 .App {
   height: 100vh;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
   z-index: 1;
   background-image: url("../img/name_tag_bottom_intro.svg"); }
+  @media screen and (max-width: 800px) {
+    .App {
+      overflow-y: scroll; } }
   @media screen and (max-width: 800px) {
     .App {
       background-image: url("../img/name_tag_left_intro.svg"); } }

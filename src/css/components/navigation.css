@@ -4,10 +4,13 @@
 .thumbs {
   display: flex;
   flex-direction: column;
-  position: absolute;
+  position: fixed;
   right: 35px;
   top: calc(50% - 8 * 50px / 2);
   z-index: 10; }
+  @media screen and (max-width: 600px) {
+    .thumbs {
+      right: 20px; } }
 
 .thumb {
   width: 50px;
@@ -15,6 +18,10 @@
   position: relative;
   background-color: #242424;
   background-size: cover; }
+  @media screen and (max-width: 600px) {
+    .thumb {
+      width: 40px;
+      height: 40px; } }
   .thumb .tag {
     position: absolute;
     right: 100vw;
@@ -25,17 +32,23 @@
     text-align: right;
     color: #BFBFBF;
     animation: slideMeOut 0.5s forwards; }
+    @media screen and (max-width: 800px) {
+      .thumb .tag {
+        display: none; } }
   .thumb:hover .tag {
     animation: slideMeIn 0.5s forwards; }
 
 .back-to-home {
-  position: absolute;
+  position: fixed;
   top: 30px;
   right: calc(35px + 25px - 6px);
   color: #EBEBEB;
   z-index: 1; }
   .back-to-home.black {
     color: #242424; }
+  @media screen and (max-width: 600px) {
+    .back-to-home {
+      right: calc(20px + 20px - 6px); } }
 
 .thumb-1 {
   background-color: #cccccc; }

@@ -5,11 +5,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px; }
+  margin: 20px 0; }
+  @media screen and (max-width: 600px) {
+    .Contacts {
+      position: absolute;
+      width: 100%;
+      bottom: 0; } }
 
 .email,
 .social {
   margin-right: 50px; }
+  @media screen and (max-width: 600px) {
+    .email,
+    .social {
+      margin-right: 20px; } }
 
 .email:link, .email:visited,
 .social a:link,
@@ -17,6 +26,13 @@
 .about:link,
 .about:visited {
   color: #BFBFBF; }
+  @media screen and (max-width: 800px) {
+    .email:link, .email:visited,
+    .social a:link,
+    .social a:visited,
+    .about:link,
+    .about:visited {
+      color: #242424; } }
 
 .email:hover,
 .social a:hover,
