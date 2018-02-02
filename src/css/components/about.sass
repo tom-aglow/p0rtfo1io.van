@@ -10,8 +10,9 @@
 
   @media screen and (max-width: 800px)
     background-image: url("../img/name_tag_left.svg")
+    //height: 120%
   @media screen and (max-width: 600px)
-    height: 200%
+    height: 220%
     background-image: none
 
 
@@ -25,9 +26,9 @@
   animation: slideInDown 0.6s 0.3s forwards
 
   @media screen and (max-width: 800px)
-    width: calc(100% - 100vh / 1100 * 140 * 4 / 3 - 150px)
+    width: calc(100% - 100vh / 1100 * 140 * 4 / 3 - 140px)
     left: calc(100vh / 1100 * 140 * 4 / 3)
-    top: calc(100vh / 1100 * 250 + 30px)
+    top: calc(100vh / 1100 * 250)
 
   @media screen and (max-width: 600px)
     width: calc(100% - 120px)
@@ -40,3 +41,7 @@
 
   a:visited, a:link
     text-decoration: underline
+
+  .quote
+    text-transform: lowercase
+    margin-top: 50px
