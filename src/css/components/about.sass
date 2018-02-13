@@ -2,11 +2,11 @@
 
 .About
   background:
-    color: $color-light-grey
     image: url("../img/name_tag_bottom.svg")
   height: 100%
   width: 100%
   position: relative
+  animation: bgFadeIn 1s forwards
 
   @media screen and (max-width: 800px)
     background-image: url("../img/name_tag_left.svg")
@@ -45,3 +45,9 @@
   .quote
     text-transform: lowercase
     margin-top: 50px
+
+@keyframes bgFadeIn
+  0%
+    background-color: rgba(235, 235, 235, 0)
+  100%
+    background-color: rgba(235, 235, 235, 1)

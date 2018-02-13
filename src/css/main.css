@@ -121,17 +121,17 @@ p {
 /***    EXTENDS    ***/
 /***    BREAKPOINTS    ***/
 .About {
-  background-color: #EBEBEB;
   background-image: url("../img/name_tag_bottom.svg");
   height: 100%;
   width: 100%;
-  position: relative; }
+  position: relative;
+  animation: bgFadeIn 1s forwards; }
   @media screen and (max-width: 800px) {
     .About {
       background-image: url("../img/name_tag_left.svg"); } }
   @media screen and (max-width: 600px) {
     .About {
-      height: 200%;
+      height: 220%;
       background-image: none; } }
 
 .about-me {
@@ -144,9 +144,9 @@ p {
   animation: slideInDown 0.6s 0.3s forwards; }
   @media screen and (max-width: 800px) {
     .about-me {
-      width: calc(100% - 100vh / 1100 * 140 * 4 / 3 - 150px);
+      width: calc(100% - 100vh / 1100 * 140 * 4 / 3 - 140px);
       left: calc(100vh / 1100 * 140 * 4 / 3);
-      top: calc(100vh / 1100 * 250 + 30px); } }
+      top: calc(100vh / 1100 * 250); } }
   @media screen and (max-width: 600px) {
     .about-me {
       width: calc(100% - 120px);
@@ -156,6 +156,15 @@ p {
     margin-bottom: 1rem; }
   .about-me a:visited, .about-me a:link {
     text-decoration: underline; }
+  .about-me .quote {
+    text-transform: lowercase;
+    margin-top: 50px; }
+
+@keyframes bgFadeIn {
+  0% {
+    background-color: rgba(235, 235, 235, 0); }
+  100% {
+    background-color: #ebebeb; } }
 
 /***    COLORS    ***/
 /***    EXTENDS    ***/
