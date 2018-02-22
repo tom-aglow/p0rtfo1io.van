@@ -3,7 +3,12 @@ import React, { Component } from 'react';
 import works from '../db/works';
 
 class Works extends Component {
-  renderGithubLink(link) {
+  componentDidUpdate() {
+    const target = document.querySelector('.Work');
+    target.scrollIntoView();
+  }
+
+  static renderGithubLink(link) {
     if (link) {
       return <a href={link} target="_blank" rel="noopener noreferrer"><span className="fa fa-git" /></a>
     }
@@ -23,7 +28,7 @@ class Works extends Component {
           <h1>{name}</h1>
           <div className="links">
             <a href={url} target="_blank" rel="noopener noreferrer"><span className="fa fa-external-link" /></a>
-            {this.renderGithubLink(github)}
+            {Works.renderGithubLink(github)}
           </div>
         </div>
         <div className="col-right">
