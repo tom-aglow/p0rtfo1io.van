@@ -7,10 +7,14 @@
   overflow-x: hidden;
   overflow-y: hidden;
   z-index: 1;
-  background-image: url("../img/name_tag_bottom_intro.svg"); }
+  background-image: url("../img/name_tag_bottom_intro.svg"), url("../img/animation.gif");
+  background-size: 105%, 70%;
+  background-position: center bottom calc(-100vw / 1500 * 210 / 3), center center; }
   @media screen and (max-width: 800px) {
     .App {
       overflow-y: scroll; } }
   @media screen and (max-width: 800px) {
     .App {
-      background-image: url("../img/name_tag_left_intro.svg"); } }
+      background-image: url("../img/name_tag_left_intro.svg");
+      background-size: auto 105%;
+      background-position: left calc(-100vh / 1100 * 140 / 3) center; } }
