@@ -64,10 +64,20 @@
     "link": "core-music-agency",
     "thumb": "core-music.jpg",
     "images": ["core-music_1.jpg", "core-music_2.jpg"],
-    "description": "core music is the one of the largest local music agencies in canada that represents composers, music editors and producers who creates music for films, television and games. core music is seeking for its site renovation, they want to make it modern and clean and keep it friendly for users. <br><br> the site has slick and simple look and not overwhelmed with graphic elements. the news page has infinite scrolling functionality. on the back-end side a custom cms was created using laravel framework for server side, vue.js for client side and vuex for state management of the application.",
+    "description": "core music is the one of the largest local music agencies in canada that represents composers, music editors and producers who creates music for films, television and games. core music is seeking for its site renovation, they want to make it modern and clean and keep it friendly for users. <br><br> the site has slick and simple look and not overwhelmed with graphic elements. the news page has infinite scrolling functionality.",
     "url": "https://coremusicagency.com",
     "github": "https://github.com/tom-aglow/core_music",
-    "tags": ["laravel", "vue.js", "vuex", "jquery", "ajax", "sass", "bootstrap", "tdd", "unit test"]
+    "tags": ["laravel", "jquery", "ajax", "sass", "bootstrap"]
+  },
+  {
+    "name": "cms",
+    "link": "cms",
+    "thumb": "cms.jpg",
+    "images": ["cms_1.jpg"],
+    "description": "this is the custom cms solution created for core music agency project. the cms is built as single page application using vue.js and vuex libraries. to enter the cms use the following credentials: username - user, password - vanarts",
+    "url": "https://core-music.deeppink.me/admin",
+    "github": "https://github.com/tom-aglow/core_music",
+    "tags": ["laravel", "vue.js", "vuex", "ajax", "tdd", "unit test"]
   },
   {
     "name": "board buddies",

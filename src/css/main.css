@@ -178,10 +178,11 @@ p {
   flex-direction: column;
   position: fixed;
   right: 35px;
-  top: calc(50% - 9 * 50px / 2);
+  top: calc(50% - 10 * 50px / 2);
   z-index: 10; }
   @media screen and (max-width: 600px) {
     .thumbs {
+      top: calc(50% - 10 * 40px / 2);
       right: 20px; } }
 
 .thumb {
@@ -223,37 +224,37 @@ p {
       right: calc(20px + 20px - 6px); } }
 
 .thumb-1 {
-  background-color: #cfcfcf; }
+  background-color: #d1d1d1; }
 
 .thumb-2 {
-  background-color: #b8b8b8; }
+  background-color: #bdbdbd; }
 
 .thumb-3 {
-  background-color: #a1a1a1; }
+  background-color: #a8a8a8; }
 
 .thumb-4 {
-  background-color: #8a8a8a; }
+  background-color: #949494; }
 
 .thumb-5 {
-  background-color: #727272; }
+  background-color: #7f7f7f; }
 
 .thumb-6 {
-  background-color: #5b5b5b; }
+  background-color: #6b6b6b; }
 
 .thumb-7 {
-  background-color: #444444; }
+  background-color: #565656; }
 
 .thumb-8 {
-  background-color: #2d2d2d; }
+  background-color: #424242; }
 
 .thumb-9 {
-  background-color: #161616; }
+  background-color: #2d2d2d; }
 
 .thumb-10 {
-  background-color: black; }
+  background-color: #181818; }
 
 .thumb-11 {
-  background-color: black; }
+  background-color: #040404; }
 
 .thumb-12 {
   background-color: black; }
