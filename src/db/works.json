@@ -3,7 +3,7 @@
     "name": "glitch",
     "link": "glitch",
     "thumb": "glitch.jpg",
-    "images": ["glitch_1.jpg", "glitch_2.jpg"],
+    "images": ["glitch_2.jpg", "glitch_1.jpg"],
     "description": "this micro web application is designed for making genuine glitch effect with user's images. it has a simple user interface and minimal design. images are corrupted by php script.",
     "url": "http://glitch.ohhhh.me",
     "github": "",
@@ -64,10 +64,20 @@
     "link": "core-music-agency",
     "thumb": "core-music.jpg",
     "images": ["core-music_1.jpg", "core-music_2.jpg"],
-    "description": "core music is the one of the largest local music agencies in canada that represents composers, music editors and producers who creates music for films, television and games. core music is seeking for its site renovation, they want to make it modern and clean and keep it friendly for users. the site has slick and simple look and not overwhelmed with graphic elements. the news page has infinite scrolling functionality. on the back-end side a custom cms was created using laravel framework for server side, vue.js for client side and vuex for state management of the application.",
-    "url": "http://core-music.deeppink.me",
+    "description": "core music is the one of the largest local music agencies in canada that represents composers, music editors and producers who creates music for films, television and games. core music is seeking for its site renovation, they want to make it modern and clean and keep it friendly for users. <br><br> the site has slick and simple look and not overwhelmed with graphic elements. the news page has infinite scrolling functionality. on the back-end side a custom cms was created using laravel framework for server side, vue.js for client side and vuex for state management of the application.",
+    "url": "https://coremusicagency.com",
     "github": "https://github.com/tom-aglow/core_music",
-    "tags": ["laravel", "vue.js", "vuex", "jquery", "ajax", "sass", "bootstrap", "tdd"]
+    "tags": ["laravel", "vue.js", "vuex", "jquery", "ajax", "sass", "bootstrap", "tdd", "unit test"]
+  },
+  {
+    "name": "board buddies",
+    "link": "board-buddies",
+    "thumb": "board-buddies.jpg",
+    "images": ["board-buddies_1.jpg"],
+    "description": "board buddies is a social platform that aims to help users to host or attend board games events in their neighbourhood. currently alpha version of the project is realised as a web app for user testing. native application for ios and android is coming soon. <br><br> as so far my part in this project was a back-end developer lead. restful api with all necessary data for the first stage of the app is implemented using laravel framework. api docs are presented <a href=\"https://app.swaggerhub.com/apis/door2/board_buddies/1.0.0\">here</a>",
+    "url": "http://alpha.boardbuddiesapp.com/",
+    "github": "",
+    "tags": ["laravel", "tdd", "unit test", "rest api"]
   },
   {
     "name": "f1 hero",
@@ -77,6 +87,6 @@
     "description": "f1 hero is the formula 1 results prediction app where users can submit their forecast to compete with each other. all predictions are matched against actual race results using public api data in order to calculate user's score.",
     "url": "https://f1-hero.herokuapp.com",
     "github": "https://github.com/tom-aglow/f1_hero",
-    "tags": ["react.js", "redux", "node.js", "express.js", "api", "oauth", "webpack"]
+    "tags": ["react.js", "redux", "node.js", "express.js", "api", "oauth", "webpack", "unit test"]
   }
 ]

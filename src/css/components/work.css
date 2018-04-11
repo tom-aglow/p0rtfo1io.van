@@ -60,6 +60,9 @@
     animation: slideInDown 0.6s 0.5s forwards; }
     .Work .col-right .description, .Work .col-right .tags {
       margin-bottom: 50px; }
+      .Work .col-right .description a:link, .Work .col-right .description a:visited, .Work .col-right .tags a:link, .Work .col-right .tags a:visited {
+        color: #EBEBEB;
+        text-decoration: underline; }
     .Work .col-right .preview {
       max-width: 100%;
       max-height: 300px; }

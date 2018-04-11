@@ -5,7 +5,7 @@
   flex-direction: column
   position: fixed
   right: 35px
-  top: calc(50% - 8 * 50px / 2)
+  top: calc(50% - 9 * 50px / 2)
   z-index: 10
 
   @media screen and (max-width: 600px)
@@ -55,7 +55,7 @@
 
 @for $i from 1 through 12
   .thumb-#{$i}
-    $color: 230 - $i * (230 - 45) / (8 - 1)
+    $color: 230 - $i * (230 - 45) / (9 - 1)
     background-color: rgb($color, $color, $color)
 
 @keyframes slideMeIn

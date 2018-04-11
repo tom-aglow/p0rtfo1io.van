@@ -178,7 +178,7 @@ p {
   flex-direction: column;
   position: fixed;
   right: 35px;
-  top: calc(50% - 8 * 50px / 2);
+  top: calc(50% - 9 * 50px / 2);
   z-index: 10; }
   @media screen and (max-width: 600px) {
     .thumbs {
@@ -223,31 +223,31 @@ p {
       right: calc(20px + 20px - 6px); } }
 
 .thumb-1 {
-  background-color: #cccccc; }
+  background-color: #cfcfcf; }
 
 .thumb-2 {
-  background-color: #b1b1b1; }
+  background-color: #b8b8b8; }
 
 .thumb-3 {
-  background-color: #979797; }
+  background-color: #a1a1a1; }
 
 .thumb-4 {
-  background-color: #7c7c7c; }
+  background-color: #8a8a8a; }
 
 .thumb-5 {
-  background-color: #626262; }
+  background-color: #727272; }
 
 .thumb-6 {
-  background-color: #474747; }
+  background-color: #5b5b5b; }
 
 .thumb-7 {
-  background-color: #2d2d2d; }
+  background-color: #444444; }
 
 .thumb-8 {
-  background-color: #131313; }
+  background-color: #2d2d2d; }
 
 .thumb-9 {
-  background-color: black; }
+  background-color: #161616; }
 
 .thumb-10 {
   background-color: black; }
@@ -342,6 +342,9 @@ p {
     animation: slideInDown 0.6s 0.5s forwards; }
     .Work .col-right .description, .Work .col-right .tags {
       margin-bottom: 50px; }
+      .Work .col-right .description a:link, .Work .col-right .description a:visited, .Work .col-right .tags a:link, .Work .col-right .tags a:visited {
+        color: #EBEBEB;
+        text-decoration: underline; }
     .Work .col-right .preview {
       max-width: 100%;
       max-height: 300px; }
